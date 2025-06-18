@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+                  <circle class="background" cx="90" cy="90" r="80" transform="rotate(-90, 100, 90)"/>
+                  <circle class="outer" cx="90" cy="90" r="80" transform="rotate(-90, 100, 90)"/>
+              </svg>
