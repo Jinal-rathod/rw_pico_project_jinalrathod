@@ -1,40 +1,822 @@
-@media (max-width: 768px) {
+/*
+
+xs  >=480px
+sm  >=576px
+md  >=768px
+lg  >=992px
+xl  >=1200px
+2xl >=1400px
+
+*/
+
+@media(max-width:480px) {
+
+    /* common css */
+    .text {
+        padding: 10px 20px;
+        font-size: 25px;
+        margin-left: 70px;
+    }
+
+    .text img {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+    }
+
+    .square1 {
+        top: -5px;
+        left: -5px;
+    }
+
+    .square2 {
+        top: -5px;
+        right: -5px;
+    }
+
+    .square3 {
+        bottom: -5px;
+        left: -5px;
+    }
+
+    .square4 {
+        bottom: -5px;
+        right: -5px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #04060c;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    h4 {
+        color: orangered;
+        font-weight: 600;
+        margin-bottom: 0px;
+        font-size: 16px;
+        align-items: center;
+        display: flex;
+        padding: 10px;
+    }
+
+    h4 img {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    /* main css */
+    .container {
+        max-width: 100%;
+    }
 
     /* header section */
     /* sidebar */
     .sidebar {
         width: 100%;
+        background-color: #f4f4f6;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-top: 0px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        display: inline-block;
+        padding: 7px 10px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.605);
+    }
+
+    .nav-links {
+        display: none;
     }
 
     /* hero section */
-    .main {
-        max-width: 100%;
-        padding: 20px;
+    .hero-main {
+        padding: 10px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 130px;
     }
 
-    .profile-img {
-        margin-top: 20px;
+    .intro img {
+        height: 30px;
     }
 
-    h1 {
-        font-size: 28px;
+    .intro {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .header-intro h1 {
+        font-size: 30px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desc-img {
+        margin-top: 0px;
+    }
+
+    .desc-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .desc {
+        font-size: 18px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .buttons {
+        margin: 0px;
+        display: block;
+    }
+
+    .download {
+        margin: 20px 0px;
+        font-size: 16px;
+    }
+
+    .video {
+        display: flex;
+        justify-content: center;
+    }
+
+    .arrow-img {
+        display: none;
+    }
+
+    .social {
+        margin: 0px;
+    }
+
+    .social-links {
+        margin: 20px auto;
     }
 
     /* about section */
     .about-section {
+        margin-left: 0px;
+    }
+
+    .about-main {
+        display: flex;
         flex-direction: column;
-        text-align: center;
+    }
+
+    .img2 {
+        margin: 0px;
+    }
+
+    .about-content p {
+        font-size: 17px;
+        color: rgba(0, 0, 0, 0.500);
+        margin: 30px 0px;
+        line-height: 1.6;
+        margin: 30px;
+        max-width: 100%;
     }
 
     .features ul {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        list-style: none;
+        margin: 30px;
+    }
+
+    .features li {
+        font-size: 17px;
+        color: #000;
+    }
+
+    .btn-contact {
+        background: linear-gradient(135deg, #ff6600, #ff9900);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        margin: 10px;
     }
 
     /* service section */
-    .hex-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    /* skill section */
+
+    /* portfolio section */
+
+    /* testimonial section */
+
+    /* blog section */
+
+    /* contact section */
+}
+
+@media(min-width:576px) {
+
+    /* common css */
+    .text {
+        padding: 20px 30px;
+        font-size: 45px;
+        margin-left: 130px;
     }
+
+    .text img {
+        position: absolute;
+        width: 13px;
+        height: 13px;
+    }
+
+    .square1 {
+        top: -6px;
+        left: -6px;
+    }
+
+    .square2 {
+        top: -6px;
+        right: -6px;
+    }
+
+    .square3 {
+        bottom: -6px;
+        left: -6px;
+    }
+
+    .square4 {
+        bottom: -6px;
+        right: -6px;
+    }
+
+    h1 {
+        font-size: 45px;
+        margin-bottom: 10px;
+        color: #04060c;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    h4 {
+        color: orangered;
+        font-weight: 600;
+        margin-bottom: 0px;
+        font-size: 24px;
+        align-items: center;
+        display: flex;
+        padding: 10px;
+    }
+
+    h4 img {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    /* main css */
+    .container {
+        max-width: 100%;
+    }
+
+    /* header section */
+    header {
+        margin-top: 0px;
+    }
+
+    /* sidebar */
+    .sidebar {
+        width: 100%;
+        background-color: #f4f4f6;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        display: inline-block;
+        padding: 7px 10px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.605);
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* hero section */
+    .hero-main {
+        padding: 10px;
+        width: 100%;
+        margin-left: 0px;
+        padding-top: 130px;
+    }
+
+    .intro {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .header-intro h1 {
+        font-size: 55px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desc-img {
+        margin-top: 0px;
+    }
+
+    .desc-img img {
+        height: auto;
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    .desc {
+        font-size: 20px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    .buttons {
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .arrow-img {
+        display: none;
+    }
+
+    .social {
+        margin: 0px;
+    }
+
+    .social-links {
+        margin: 20px auto;
+    }
+
+    /* about section */
+    .about-section {
+        margin-left: 0px;
+    }
+
+    .about-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-imgs {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 40px;
+    }
+
+    .img2 {
+        margin: 0px;
+    }
+
+    .about-content p {
+        font-size: 17px;
+        color: rgba(0, 0, 0, 0.500);
+        margin: 30px 0px;
+        line-height: 1.6;
+        margin: 30px;
+        max-width: 100%;
+    }
+
+    .features ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        list-style: none;
+        margin: 30px;
+    }
+
+    .features li {
+        font-size: 17px;
+        color: #000;
+    }
+
+    .btn-contact {
+        background: linear-gradient(135deg, #ff6600, #ff9900);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        margin: 10px;
+    }
+
+    /* service section */
+
+    /* skill section */
+
+    /* portfolio section */
+
+    /* testimonial section */
+
+    /* blog section */
+
+    /* contact section */
+}
+
+@media (min-width: 768px) {
+    /* header section */
+    /* sidebar */
+
+    /* hero section */
+
+    /* about section */
+
+    /* service section */
+
+    /* skill section */
+
+    /* portfolio section */
+
+    /* testimonial section */
+
+    /* blog section */
+
+    /* contact section */
+
+}
+
+@media(min-width:992px) {
+
+    /* common css */
+    .text {
+        padding: 20px 30px;
+        font-size: 48px;
+        margin-left: 100px;
+    }
+
+    .text img {
+        position: absolute;
+        width: 13px;
+        height: 13px;
+    }
+
+    .square1 {
+        top: -6px;
+        left: -6px;
+    }
+
+    .square2 {
+        top: -6px;
+        right: -6px;
+    }
+
+    .square3 {
+        bottom: -6px;
+        left: -6px;
+    }
+
+    .square4 {
+        bottom: -6px;
+        right: -6px;
+    }
+
+    h1 {
+        font-size: 45px;
+        margin-bottom: 10px;
+        color: #04060c;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    h4 {
+        color: orangered;
+        font-weight: 600;
+        margin-bottom: 0px;
+        font-size: 24px;
+        align-items: center;
+        display: flex;
+        padding: 10px;
+    }
+
+    h4 img {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    /* main css */
+    .container {
+        max-width: 100%;
+    }
+
+    /* header section */
+    /* sidebar */
+    .sidebar {
+        background-color: #f4f4f6;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        margin-bottom: 20px;
+        width: 230px;
+    }
+
+    .menu {
+        display: none
+    }
+
+    .nav-links {
+        display: inline-block;
+        margin-top: 0px;
+    }
+
+    /* hero section */
+    .hero-main {
+        padding: 10px;
+        max-width: 770px;
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+
+    .intro {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .header-intro h1 {
+        font-size: 55px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desc-img {
+        margin-top: 0px;
+    }
+
+    .desc-img img {
+        height: auto;
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    .desc {
+        font-size: 20px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    .buttons {
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .arrow-img {
+        display: none;
+    }
+
+    .social {
+        margin: 0px;
+    }
+
+    .social-links {
+        margin: 20px auto;
+    }
+
+    /* about section */
+    .about-section {
+        margin: 50px 0px 0px 250px;
+    }
+
+    .about-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-imgs {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 40px;
+    }
+
+    .img2 {
+        margin: 0px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.500);
+        margin: 30px 0px;
+        line-height: 1.6;
+        margin: 30px;
+        max-width: 100%;
+    }
+
+    .features ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        list-style: none;
+        margin: 30px;
+    }
+
+    .features li {
+        font-size: 17px;
+        color: #000;
+    }
+
+    .btn-contact {
+        background: linear-gradient(135deg, #ff6600, #ff9900);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.3s;
+        margin: 10px;
+        width: fit-content;
+    }
+
+    /* service section */
+
+    /* skill section */
+
+    /* portfolio section */
+
+    /* testimonial section */
+
+    /* blog section */
+
+    /* contact section */
+}
+
+@media(min-width:1200px) {
+    /* header section */
+    /* sidebar */
+
+    /* hero section */
+
+    /* about section */
+
+    /* service section */
+
+    /* skill section */
+
+    /* portfolio section */
+
+    /* testimonial section */
+
+    /* blog section */
+
+    /* contact section */
+}
+
+@media(min-width:1400px) {
+
+    /* common css */
+    .text {
+        padding: 20px 30px;
+        font-size: 55px;
+        margin-left: 320px;
+    }
+
+    .text img {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+    }
+
+    .square1 {
+        top: -8px;
+        left: -8px;
+    }
+
+    .square2 {
+        top: -8px;
+        right: -8px;
+    }
+
+    .square3 {
+        bottom: -8px;
+        left: -8px;
+    }
+
+    .square4 {
+        bottom: -8px;
+        right: -8px;
+    }
+
+    /* main css */
+    .container {
+        max-width: 100%;
+    }
+
+    /* header section */
+    /* sidebar */
+
+    .menu {
+        display: none
+    }
+
+    .nav-links {
+        display: inline-block;
+        margin-top: 0px;
+    }
+
+    /* hero section */
+    .hero-main {
+        padding: 10px;
+        max-width: 1100px;
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+
+    .intro {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .header-intro h1 {
+        font-size: 64px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .desc-img {
+        margin-top: 0px;
+    }
+
+    .desc-img img {
+        height: auto;
+        width: 400px;
+        padding: 0px;
+        margin-top: -80px;
+    }
+
+    .desc-text {
+        margin-left: 100px;
+    }
+
+    .desc {
+        font-size: 24px;
+        margin: 20px 0px 0px;
+        text-align: left;
+        padding: 0px;
+    }
+
+    .buttons {
+        margin: 0px;
+        justify-content: left;
+        margin: 0px 20px 20px;
+    }
+
+    .social {
+        margin-top: 60px;
+    }
+
+    .arrow-img {
+        display: inline-block;
+        margin-left: -125px;
+    }
+
+    .social-links {
+        margin: 70px 0px 20px;
+    }
+
+    /* about section */
+
+    /* service section */
+
+    /* skill section */
+
+    /* portfolio section */
+
+    /* testimonial section */
+
+    /* blog section */
+
+    /* contact section */
 }
