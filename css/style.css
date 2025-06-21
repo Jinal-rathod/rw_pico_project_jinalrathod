@@ -368,7 +368,7 @@ header {
   margin-left: -20px;
 }
 
-.service-image {
+.service-images {
   display: flex;
   align-items: center;
 }
@@ -534,19 +534,18 @@ header {
 }
 
 .portfolio-card img {
-  width: 400px;
+  width: 100%;
   height: auto;
   display: block;
 }
 
 .caption {
   position: absolute;
-  bottom: -50px;
   right: 40px;
   background-color: white;
   padding: 20px 40px;
   border-radius: 5px;
-  width: 400px;
+  width: 100%;
   height: auto;
   text-transform: uppercase;
   font-size: 1.20rem;
@@ -569,7 +568,7 @@ header {
 }
 
 .portfolio-card:hover .caption {
-  transform: translateX(-140px);
+  transform: translateX(-40px);
   transition: transform 0.5s;
 }
 
