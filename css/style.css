@@ -318,12 +318,23 @@ header {
   align-items: center;
   transition: transform 0.4s ease;
   gap: -5px;
+  font-weight: bold;
 }
 
 .about:hover {
-  color: grey;
+  color: #fff;
+  font-weight: bold;
   transform: scale(1.03);
 }
+
+.about:hover .about-skill img {
+  filter: brightness(0) invert(1);
+}
+
+.about:hover img {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(92%) saturate(745%) hue-rotate(352deg) brightness(130%) contrast(102%);
+}
+
 
 .about-skill {
   text-align: center;
@@ -430,6 +441,17 @@ header {
 .service-images {
   display: flex;
   align-items: center;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .row-1 {
@@ -448,6 +470,20 @@ header {
 
 .service-hex {
   position: relative;
+}
+
+.service-hex:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+.service-hex:hover .service-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.service-hex:hover img {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(92%) saturate(745%) hue-rotate(352deg) brightness(130%) contrast(102%);
 }
 
 .service-icon {
@@ -506,6 +542,18 @@ header {
   position: relative;
 }
 
+.skill-hex:hover {
+  color: #fff;
+}
+
+.skill-hex:hover .skill-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.skill-hex:hover img {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(92%) saturate(745%) hue-rotate(352deg) brightness(130%) contrast(102%);
+}
+
 .skill-icon {
   position: absolute;
   top: 100px;
@@ -540,6 +588,18 @@ header {
   right: 0;
   margin: auto;
   color: white;
+}
+
+.skill-hex:hover .skill-circle {
+  background-color: #fff;
+  color: #fd7103;
+  font-weight: bold;
+}
+
+.skill-hex:hover .skill-circle2 {
+  background-color: #fff;
+  color: #fd7103;
+  font-weight: bold;
 }
 
 .skill-circle2 {
@@ -827,17 +887,23 @@ header {
 }
 
 .view-more {
-  margin-top: 40px;
   padding: 15px 25px;
-  background: #f26522;
+  background: linear-gradient(90deg, #fd682d, #ff9c32);
   color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: none;
-  border-radius: 6px;
   font-weight: bold;
+  font-size: 15px;
 }
 
 .view-more:hover {
-  background: #d95000;
+  background: linear-gradient(90deg, #ff9c32, #fd682d);
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* contect section */
